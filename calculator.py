@@ -1,13 +1,18 @@
+import time
 
 def calculate(num1, num2, operator):
     if operator=="/":
         print(f"Result: {num1 / num2}")
+        time.sleep(5)
     elif operator=="*":
         print(f"Result: {num1 * num2}")
+        time.sleep(5)
     elif operator=="+":
         print(f"Result: {num1 + num2}")
+        time.sleep(5)
     elif operator=="-":
         print(f"Result: {num1 - num2}")
+        time.sleep(5)
 
 
 
@@ -18,4 +23,5 @@ try:
     calculate(num1, num2, operator)
 except:
     raise TypeError("Invalid Input")
+    time.sleep(5)
 
